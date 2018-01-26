@@ -18,6 +18,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #Create path to templates directory
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
+#Create path to static directory
+STATIC_DIR = os.path.join(BASE_DIR,'static')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -71,6 +73,8 @@ TEMPLATES = [
     },
 ]
 
+STATICFILES_DIRS = [STATIC_DIR,]
+
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
 
@@ -116,6 +120,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
 
 
 # Static files (CSS, JavaScript, Images)
